@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+/*navbar*/
+.navbar nav{
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar ul{
+    position: fixed;
+    background-color: #010913;
+    display: grid;
+    height: 70%;
+    width: 100px;
+    border-radius: 100px;
+    padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar ul li{
+    display: flex;
+    margin: auto;
+    list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar span{
+    display: none;
 }
-
-.App-link {
-  color: #61dafb;
+.spanAnim{
+    display: none;
 }
+.navbar .icon{
+    color: #ffffff;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    padding: 10px;
+    transition: 1s;
+}
+.navbar .icon:hover{
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+}
+/*Home*/
+.home .container1{
+    background-image: url("./content/background.png");
+    background-position: top;
+    background-size: cover;
+    display: grid;
+    padding-top: 650px;
+    padding-left:30%;
+    height: 800px;
+}
+.home .container1 h3{
+    margin: auto;
+}
+.home .container1 h2{
+    margin: auto;
+}
+.home button{
+    background:none;
+    position: absolute;
+    margin-top: 1500px;
+    font-size: 30px;
+    margin: auto;
+    width: 700px;
+    height: 90px;
+    border: 3px solid white;
+    color: white;
+    transition: 1s;
+}
+.home button:hover{
+    transition: 1s;
+    font-size: 40px;
+    background-color: white;
+    color:#0A2647;
+}
+.container2{
+    display: grid;
+    height: 400px;
+    background-color: #002d55;
+}
+.container2 h1{
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+.container2 img{
+    border-radius: 250px;
+    width: 200px;
+    height: 150px;
+    margin-left: 100px;
+}
+/*About Us*/
+.about .cont1{
+    height: 600px;
+    background-color: #2C74B3;
+}
+.about h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    font-family: montserrat medium;
+}
+.about .cont1 p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    width: 40%;
+    margin-left:30%;
+    color: white;
+    box-shadow: 0px 0px 20px white;
+    background-image: linear-gradient(90deg, #0A2647 35%, #053e80 100%);
+    padding: 20px;
+    border-radius: 30px;
+    opacity: 1;
+    margin-bottom: 70px;
+    
+}
+.about .cont2{
+    display: grid;
+    height: 500px;
+    background-color: #053e80;
+}
+.about .cont2 .team{
+    display: flex;
+}
+.about .cont2 .team p{
+    text-align: center;
+    color: white;
+    margin-left:150px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.about .cont2 .team img{
+    box-shadow: 0px 0px 20px white;
+    border-radius: 20px;
+   width: 220px;
+   height: 220px;
+   margin-left: 150px;
+}
+.about .cont3{
+    display: block;
+    height: 500px;
+    background-color: #001125;
+}
+.about .cont3 p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+}
+.about .cont3 img{
+    display: block;
+    margin: auto;
+    width: 250px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+/*Gallery*/
+.gallery{
+    height: 1000px;
+    background-image: linear-gradient(#002d55,#053e80 );
+}
+.gallery h1{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.gallery p{
+    display: none;
+    margin-top: 160px;
+    margin-left: 20px; 
+    width: 500px;
+    color: white;
+    font-size: 25px;         
+}
+.gallery .container{
+    display: block;
+    
+}
+.gallery img{
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 64, 160);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 70px;
+    margin-top: 50px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.gallery img:hover{
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+/*contactus*/
+.contact{
+    padding-top: 150px;
+    height: 830px;
+    background-color: #053e80;
+}
+.contact form h1{
+    text-align: center;
+    color: white;
+    margin-left: 40px;
+}
+.contact form ul{
+    display: grid;
+    margin: auto;
+}
+.contact form li{
+    list-style: none;
+    display: grid;
+    margin: auto;
+    margin-top: 30px;
+}
+.contact form li span{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+.contact form{
+    background-color: rgb(16, 8, 37);
+    padding-top: 50px;
+    border-radius: 125px;
+    width: 750px;
+    height: 600px;
+    margin: auto;
+}
+.contact form li input{
+    width: 250px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: none;
+}
+.contact form li button{
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color:#2C74B3;
+    padding: 22px;
+    margin-top: 20px;
+    transition: 0.5s;
+}.contact form li button:hover{
+    transition: 0.5s;
+    background-color: #2C74B3;
+    font-size: 25px;
 }
